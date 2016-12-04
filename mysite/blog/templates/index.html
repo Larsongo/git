@@ -1,0 +1,31 @@
+<html>
+      <style type="text/css">
+        body{color:#efd;background:#353;padding:0 5em;margin:0}
+        h1{padding:2em 1em;background:#675}
+        h2{color:#bf8;border-top:1px dotted #fff;margin-top:2em}
+        p{margin:1em 0}
+      </style>
+      <head>
+      <title>MY BLOG</title>
+      </head>
+
+      <body>
+        <h1>Larsongo的博客</h1>
+        <h3>但行心事，莫问前程</h3>
+        <div id="名称">
+	<script language=Javascript>
+	var now=new Date()
+	document.write(1900+now.getYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()+" "+now.getHours()+":"+now.getMinutes()+":"+now.getSeconds())
+	</script>
+	</div> 
+        {% for i in menu_list %}
+	{{ i }}
+	{% endfor %}
+	<p>Introduction:</p>
+	<p>my name is {{user.name}},I am {{user.age}} years old</p>
+	<p></p>
+	<a href="/blog/Plus/">计算</a>
+	<p></p>	
+	<a href="http://blog.csdn.net/lisheninasiainfo">我的CSDN</a>
+      </body>
+</html>

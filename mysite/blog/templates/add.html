@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>请输入两个数字,求和： </h1>
+<form method='post'>
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="提交">
+<p>现在时间是：{{time}}</p>
+</form>
+</body>
+</html>
